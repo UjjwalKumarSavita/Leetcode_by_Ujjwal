@@ -32,3 +32,6 @@ class Solution {
         return maxDis;
     }
 }
+
+// time complexity : O(n)
+// space commplexity : O(1)
