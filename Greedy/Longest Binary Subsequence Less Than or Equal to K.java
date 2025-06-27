@@ -2,7 +2,7 @@ class Solution {
     public int longestSubsequence(String s, int k) {
         int count = 0;
         int n = s.length();
-        int decimal = 0;
+        // int decimal = 0;
         int pow = 1;
 
         for (int i = n - 1; i >= 0; i--) {
