@@ -1,5 +1,5 @@
 // APPROACH 2: ACHA TELL 1 DIFF KAB AYEGEA ---> ONLY WHEN ( (num + 1) - num == 5 )--> eg ( 6 - 5 == 1)
-TC : O(n)  
+// TC : O(n)  
 // SC : O(n) ; for map
 
 class Solution{
