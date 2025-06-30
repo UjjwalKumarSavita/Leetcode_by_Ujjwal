@@ -1,7 +1,7 @@
 // APPROACH 2: ACHA TELL 1 DIFF KAB AYEGEA ---> ONLY WHEN ( (num + 1) - num == 5 )--> eg ( 6 - 5 == 1)
 // TC : O(n)  
 // SC : O(n) ; for map
-
+import java.util.*;
 class Solution{
     public int findLHS(int [] nums){
         Map<Integer, Integer> map = new HashMap<>();
@@ -24,21 +24,22 @@ class Solution{
 
 
 // APPROACH 1 :
-// pass only  91 / 206 : two pointer se 
-
+// tc : O(N logN)
+// sc : O(1)
 // class Solution {
 //     public int findLHS(int[] nums) {
 //         Arrays.sort(nums);
-//         int st= 0; 
-//         int end = nums.length - 1;
+//         int i = 0, maxLen = 0;
 
-//         while(st <= end){
-//             int diff = nums[end] - nums[st];
-//             if( diff == 1) return end - st + 1;
-//             else if( diff == 2 && nums[st] != nums[st + 1]) st++;
-//             else end--;
-
+//         for (int j = 0; j < nums.length; j++) {
+//             while (nums[j] - nums[i] > 1) {
+//                 i++;
+//             }
+//             if (nums[j] - nums[i] == 1) {
+//                 maxLen = Math.max(maxLen, j - i + 1);
+//             }
 //         }
-//         return 0;
+
+//         return maxLen;
 //     }
 // }
