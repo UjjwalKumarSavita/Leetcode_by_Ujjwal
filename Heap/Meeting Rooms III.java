@@ -24,6 +24,7 @@ class Solution {
 
         // var unUsedRooms = new PriorityQueue<Integer>();// by default min hi hoti hai
         PriorityQueue<Integer> unUsedRooms = new PriorityQueue<>();
+        
 
         for(int room = 0; room < n ;room++){
             unUsedRooms.add(room); // initially to sare unUsed me hongaaa
