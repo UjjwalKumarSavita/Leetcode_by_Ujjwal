@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/description/
+// tc : O(NlogN) + O(N * L) // for sorting + for loop and startsWtih ke check ke liye
+// sc : O(N )
 
 import java.util.*;
 class Solution {
